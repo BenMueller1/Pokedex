@@ -8,7 +8,6 @@ import chromedriver_autoinstaller
 
 #chromedriver_autoinstaller.install() # install and add to path
 #driver = webdriver.Chrome()
-entry_var = None
 # idea, we could just scrape the data once and save locally in a json file to make lookup super easy
 
 # get the pokemon whose id is in the entry field, clear the field, then display the data
@@ -22,6 +21,7 @@ def get_pokemon():
 
 
 def init_gui():
+    global entry_var
     window = tk.Tk()
     window.geometry("400x400")
     entry_var = tk.StringVar()
