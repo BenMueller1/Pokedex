@@ -1,11 +1,89 @@
-C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> [37120:41100:0622/223831.615:ERROR:gpu_init.cc(481)] Passthrough is not s
-upported, GL is disabled, ANGLE isX
-X> quit()X
-XAt line:1 char:6
-+ quit()X
-+      ~X
-An expression was expected after '('.X
-    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordExceptionX
-    + FullyQualifiedErrorId : ExpectedExpressionX
- X
+C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
+ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
+X
+X
+X
+X
+X
+X
+X
+DevTools listening on ws://127.0.0.1:55679/devtools/browser/37b14c9d-3aa8-49b3-a22d-cf8ab0a2f19a
+{'name': 'Ivysaur', 'types': ['GRASS', 'POISON'], 'hp': '60', 'attack': '62', 'defense': '63', 'special attack': '80', 'special defe
+nse': '80', 'speed': '60'}X
+
+DevTools listening on ws://127.0.0.1:55718/devtools/browser/c1b6a607-9a5d-4ee9-8325-c63e7a3886f5
+{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
+fense': '100', 'speed': '80'}X
+XX
+DevTools listening on ws://127.0.0.1:55679/devtools/browser/37b14c9d-3aa8-49b3-a22d-cf8ab0a2f19aX
+{'name': 'Ivysaur', 'types': ['GRASS', 'POISON'], 'hp': '60', 'attack': '62', 'defense': '63', 'special attack': '80', 'special defe
+nse': '80', 'speed': '60'}X
+X
+DevTools listening on ws://127.0.0.1:55718/devtools/browser/c1b6a607-9a5d-4ee9-8325-c63e7a3886f5X
+{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
+fense': '100', 'speed': '80'}X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+X
+DevTools listening on ws://127.0.0.1:55744/devtools/browser/2091dac0-8ce8-4723-9d32-5da828f4e344
+{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '100', 'defense': '123', 'special attack': '122', 'special 
+defense': '120', 'speed': '80'}X
+X
+DevTools listening on ws://127.0.0.1:55679/devtools/browser/37b14c9d-3aa8-49b3-a22d-cf8ab0a2f19aX
+{'name': 'Ivysaur', 'types': ['GRASS', 'POISON'], 'hp': '60', 'attack': '62', 'defense': '63', 'special attack': '80', 'special defe
+nse': '80', 'speed': '60'}X
+X
+DevTools listening on ws://127.0.0.1:55718/devtools/browser/c1b6a607-9a5d-4ee9-8325-c63e7a3886f5X
+{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
+fense': '100', 'speed': '80'}X
+X
+DevTools listening on ws://127.0.0.1:55744/devtools/browser/2091dac0-8ce8-4723-9d32-5da828f4e344X
+{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '100', 'defense': '123', 'special attack': '122', 'special 
+defense': '120', 'speed': '80'}X
+X
+X
+XX
+DevTools listening on ws://127.0.0.1:55679/devtools/browser/37b14c9d-3aa8-49b3-a22d-cf8ab0a2f19aX
+{'name': 'Ivysaur', 'types': ['GRASS', 'POISON'], 'hp': '60', 'attack': '62', 'defense': '63', 'special attack': '80', 'special defe
+nse': '80', 'speed': '60'}X
+X
+DevTools listening on ws://127.0.0.1:55718/devtools/browser/c1b6a607-9a5d-4ee9-8325-c63e7a3886f5X
+{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
+fense': '100', 'speed': '80'}X
+X
+DevTools listening on ws://127.0.0.1:55744/devtools/browser/2091dac0-8ce8-4723-9d32-5da828f4e344X
+{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '100', 'defense': '123', 'special attack': '122', 'special 
+defense': '120', 'speed': '80'}X
+XX
+DevTools listening on ws://127.0.0.1:55679/devtools/browser/37b14c9d-3aa8-49b3-a22d-cf8ab0a2f19aX
+{'name': 'Ivysaur', 'types': ['GRASS', 'POISON'], 'hp': '60', 'attack': '62', 'defense': '63', 'special attack': '80', 'special defe
+nse': '80', 'speed': '60'}X
+X
+DevTools listening on ws://127.0.0.1:55718/devtools/browser/c1b6a607-9a5d-4ee9-8325-c63e7a3886f5X
+{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
+fense': '100', 'speed': '80'}X
+X
+DevTools listening on ws://127.0.0.1:55744/devtools/browser/2091dac0-8ce8-4723-9d32-5da828f4e344X
+{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '100', 'defense': '123', 'special attack': '122', 'special 
+defense': '120', 'speed': '80'}X
 PS 
