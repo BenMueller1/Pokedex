@@ -61,6 +61,7 @@ def scrape(poke_id):
 
 
 def get_pokemon():
+    global poke_data
     # get id from entry field and clear field
     poke_id = entry_var.get()  # TODO figure out how to get this to work
     # scrape website for data about the id
@@ -81,14 +82,13 @@ def run_gui():
 
 
 def main():
-    # scrape(1) does not work
-    scrape(1)
-    return
+    # TODO scrape(1) does not work
+    # scrape(1)
+    # scrape(5)
+    #  return
 
     run_gui()  # gui is initially empty, prompts user to enter a pokemon ID
-    d = get_pokemon(poke_id)   # poke_id is what user submitted to the gui, this fn returns a dict of data about the pokemon
-    # now need to put the data in d in the gui
-
+    # populate_gui(poke_data)
 
 
 
