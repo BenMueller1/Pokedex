@@ -6,11 +6,21 @@ from selenium.webdriver.common.by import By
 
 import chromedriver_autoinstaller
 
+from functools import partial
+
 # TODO make a version of this that uses the API instead of web scraping
 
-# idea, we could just scrape the data once and save locally in a json file to make lookup super easy
 
-# get the pokemon whose id is in the entry field, clear the field, then display the data
+poke_data = {}
+poke_data["name"] = None
+poke_data["types"] = None
+poke_data["hp"] = None
+poke_data["attack"] = None
+poke_data["defense"] = None
+poke_data["special attack"] = None
+poke_data["special defense"] = None
+poke_data["speed"] = None
+
 
 def scrape(poke_id):
     poke_data = {} #name, types, hp, attack, defense, special attack, special defense, speed, image
@@ -52,7 +62,6 @@ def scrape(poke_id):
     poke_data["special defense"] = row_data[8].text
     poke_data["speed"] = row_data[9].text
 
-
     print(poke_data)
     driver.close()
     driver.quit()
@@ -60,24 +69,32 @@ def scrape(poke_id):
 
 
 
-def get_pokemon():
+def get_pokemon(entry_var):
     global poke_data
-    # get id from entry field and clear field
-    poke_id = entry_var.get()  # TODO figure out how to get this to work
-    # scrape website for data about the id
+    poke_id = entry_var.get()
     poke_data = scrape(poke_id)
-    
+    entry_var.set("") # clear entry firld
 
 def run_gui():
-    global entry_var
     window = tk.Tk()
     window.geometry("400x400")
     entry_var = tk.StringVar()
 
     l = tk.Label(text="poke ID: ")
-    e = tk.Entry()
-    b = tk.Button(text="get", command=get_pokemon, textvariable=entry_var)
-    l.pack(); e.pack(); b.pack()
+    e = tk.Entry(textvariable=entry_var)
+    b = tk.Button(text="get", command=partial(get_pokemon, int(entry_var)))
+
+    l1 = tk.Label("Name: ", text=poke_data["name"])
+    l2 = tk.Label("Types: ", text=poke_data["types"])
+    l3 = tk.Label("HP: ", text=poke_data["hp"])
+    l4 = tk.Label("Attack: ", text=poke_data["attack"])
+    l5 = tk.Label("Defense: ", text=poke_data["defense"])
+    l6 = tk.Label("Special Attack: ", text=poke_data["special attack"])
+    l7 = tk.Label("Special Defense: ", text=poke_data["special defense"])
+    l8 = tk.Label("Speed: ", text=poke_data["speed"])
+
+    l.pack(); e.pack(); b.pack(); l1.pack(); l2.pack() 
+    l3.pack(); l4.pack(); l5.pack(); l6.pack(); l7.pack(); l8.pack()
     window.mainloop()  # opens the window & runs event loop (blocking; listens for button clicks or keypresses)
 
 
