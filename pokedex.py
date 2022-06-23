@@ -37,18 +37,24 @@ def scrape(poke_id):
     # use css selectors to find the nth child from the top of the html element that holds all of the rows
     # scrolls down from poke-idth row until the id of the pokemon in the row matches poke-id
     row_id = 0
-    i = poke_id-1
-    while (row_id != poke_id):
-        i += 1
+    if poke_id == 1:
         row = driver.find_element( 
-            By.CSS_SELECTOR,
-            f"tr:nth-child({i})"
-        )
-        row_id = row.find_element(
-            By.CSS_SELECTOR,
-            "span:nth-child(2)"
-        ).text
-        row_id = int(row_id)
+                By.CSS_SELECTOR,
+                f"tr:nth-child({poke_id})"
+            )
+    else:
+        i = poke_id-1
+        while (row_id != poke_id):
+            i += 1
+            row = driver.find_element( 
+                By.CSS_SELECTOR,
+                f"tr:nth-child({i})"
+            )
+            row_id = row.find_element(
+                By.CSS_SELECTOR,
+                "span:nth-child(2)"
+            ).text
+            row_id = int(row_id)
 
     #breakpoint()
     row_data = row.find_elements(By.TAG_NAME, "td") 
