@@ -66,7 +66,7 @@ def scrape(poke_id):
     poke_data["special attack"] = row_data[7].text
     poke_data["special defense"] = row_data[8].text
     poke_data["speed"] = row_data[9].text
-    poke_data["image_url"] = row_data[1].find_element(By.TAG_NAME, "img").get_attribute("src")
+    poke_data["image_url"] = row_data[0].find_element(By.TAG_NAME, "img").get_attribute("src")
     breakpoint()
     # print(poke_data)
     driver.close()
