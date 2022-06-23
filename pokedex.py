@@ -26,7 +26,7 @@ def init_gui():
 
     l = tk.Label(text="poke ID: ")
     e = tk.Entry()
-    b = tk.Button(command=get_pokemon)
+    b = tk.Button(text="get", command=get_pokemon)
     l.pack(); e.pack(); b.pack()
     window.mainloop()  # opens the window & runs event loop (blocking; listens for button clicks or keypresses)
 
