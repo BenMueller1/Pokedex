@@ -1,4 +1,6 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Users/benjm/git/codeHistories
 PythonProjects/Pokedex/pokedex.pyX
-tstX
+NoneX
+NoneX
+NoneX
 PS 

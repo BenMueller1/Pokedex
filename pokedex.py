@@ -8,13 +8,13 @@ import chromedriver_autoinstaller
 
 #chromedriver_autoinstaller.install() # install and add to path
 #driver = webdriver.Chrome()
-
+entry_var = None
 # idea, we could just scrape the data once and save locally in a json file to make lookup super easy
 
 # get the pokemon whose id is in the entry field, clear the field, then display the data
 def get_pokemon():
     # get id from entry field and clear field
-    print('tst')
+    print(entry_var)
     #id = entry_var
 
     # scrape website for data about the id
