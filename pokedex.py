@@ -82,7 +82,7 @@ def run_gui():
 
     l = tk.Label(text="poke ID: ")
     e = tk.Entry(textvariable=entry_var)
-    b = tk.Button(text="get", command=partial(get_pokemon, int(entry_var)))
+    b = tk.Button(text="get", command=partial(get_pokemon, entry_var))
 
     l1 = tk.Label("Name: ", text=poke_data["name"])
     l2 = tk.Label("Types: ", text=poke_data["types"])

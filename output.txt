@@ -1,11 +1,29 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
-Traceback (most recent call last):X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 114, in <module>X
+XTraceback (most recent call last):
+X  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 114, in <module>
     main()X
   File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 107, in mainX
     run_gui()  # gui is initially empty, prompts user to enter a pokemon IDX
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 85, in run_guiX
-    b = tk.Button(text="get", command=partial(get_pokemon, int(entry_var)))X
-TypeError: int() argument must be a string, a bytes-like object or a real number, not 'StringVar'X
-XPS 
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 87, in run_guiX
+    l1 = tk.Label("Name: ", text=poke_data["name"])X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 3177, in __init__X
+    Widget.__init__(self, master, 'label', cnf, kw)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 2595, in __init__X
+    BaseWidget._setup(self, master, cnf)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 2564, in _setupX
+    self.tk = master.tkX
+AttributeError: 'str' object has no attribute 'tk'X
+X    main()X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 107, in mainX
+    run_gui()  # gui is initially empty, prompts user to enter a pokemon IDX
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 87, in run_guiX
+    l1 = tk.Label("Name: ", text=poke_data["name"])X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 3177, in __init__X
+    Widget.__init__(self, master, 'label', cnf, kw)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 2595, in __init__X
+    BaseWidget._setup(self, master, cnf)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 2564, in _setupX
+    self.tk = master.tkX
+AttributeError: 'str' object has no attribute 'tk'X
+PS 
