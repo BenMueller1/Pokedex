@@ -72,7 +72,7 @@ def scrape(poke_id):
 def get_pokemon(entry_var):
     global poke_data
     poke_id = entry_var.get()
-    poke_data = scrape(poke_id)
+    poke_data = scrape(int(poke_id))
     entry_var.set("") # clear entry firld
 
 def run_gui():
@@ -84,14 +84,14 @@ def run_gui():
     e = tk.Entry(textvariable=entry_var)
     b = tk.Button(text="get", command=partial(get_pokemon, entry_var))
 
-    l1 = tk.Label("Name: ", text=poke_data["name"])
-    l2 = tk.Label("Types: ", text=poke_data["types"])
-    l3 = tk.Label("HP: ", text=poke_data["hp"])
-    l4 = tk.Label("Attack: ", text=poke_data["attack"])
-    l5 = tk.Label("Defense: ", text=poke_data["defense"])
-    l6 = tk.Label("Special Attack: ", text=poke_data["special attack"])
-    l7 = tk.Label("Special Defense: ", text=poke_data["special defense"])
-    l8 = tk.Label("Speed: ", text=poke_data["speed"])
+    l1 = tk.Label(text=f"Name: {poke_data['name']}")
+    l2 = tk.Label(text=f"Types: {poke_data['types']}")
+    l3 = tk.Label(text=f"HP: {poke_data['hp']}")
+    l4 = tk.Label(text=f"Attack: {poke_data['attack']}")
+    l5 = tk.Label(text=f"Defense: {poke_data['defense']}")
+    l6 = tk.Label(text=f"Special Attack: {poke_data['special attack']}")
+    l7 = tk.Label(text=f"Special Defense: {poke_data['special defense']}")
+    l8 = tk.Label(text=f"Speed: {poke_data['speed']}")
 
     l.pack(); e.pack(); b.pack(); l1.pack(); l2.pack() 
     l3.pack(); l4.pack(); l5.pack(); l6.pack(); l7.pack(); l8.pack()
