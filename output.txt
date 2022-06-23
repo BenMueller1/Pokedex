@@ -1,89 +1,59 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
 X
-X
-X
-X
-X
-X
-X
-DevTools listening on ws://127.0.0.1:55679/devtools/browser/37b14c9d-3aa8-49b3-a22d-cf8ab0a2f19a
-{'name': 'Ivysaur', 'types': ['GRASS', 'POISON'], 'hp': '60', 'attack': '62', 'defense': '63', 'special attack': '80', 'special defe
-nse': '80', 'speed': '60'}X
-
-DevTools listening on ws://127.0.0.1:55718/devtools/browser/c1b6a607-9a5d-4ee9-8325-c63e7a3886f5
-{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
-fense': '100', 'speed': '80'}X
-XX
-DevTools listening on ws://127.0.0.1:55679/devtools/browser/37b14c9d-3aa8-49b3-a22d-cf8ab0a2f19aX
-{'name': 'Ivysaur', 'types': ['GRASS', 'POISON'], 'hp': '60', 'attack': '62', 'defense': '63', 'special attack': '80', 'special defe
+DevTools listening on ws://127.0.0.1:55797/devtools/browser/d845ea37-4bae-40cc-82bf-ac4445589381X
+X{'name': 'Ivysaur', 'types': ['GRASS', 'POISON'], 'hp': '60', 'attack': '62', 'defense': '63', 'special attack': '80', 'special defe
 nse': '80', 'speed': '60'}X
 X
-DevTools listening on ws://127.0.0.1:55718/devtools/browser/c1b6a607-9a5d-4ee9-8325-c63e7a3886f5X
-{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
+DevTools listening on ws://127.0.0.1:55821/devtools/browser/11ff5f92-869f-45c8-a794-fadedf7297d1X
+X{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
 fense': '100', 'speed': '80'}X
 X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-DevTools listening on ws://127.0.0.1:55744/devtools/browser/2091dac0-8ce8-4723-9d32-5da828f4e344
-{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '100', 'defense': '123', 'special attack': '122', 'special 
+DevTools listening on ws://127.0.0.1:55846/devtools/browser/856f00e5-ca3f-4a16-82e1-a8045372a49fX
+X{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '100', 'defense': '123', 'special attack': '122', 'special 
 defense': '120', 'speed': '80'}X
+XTraceback (most recent call last):
+X  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
+X    sock.connect(sa)
+TimeoutError: timed outX
 X
-DevTools listening on ws://127.0.0.1:55679/devtools/browser/37b14c9d-3aa8-49b3-a22d-cf8ab0a2f19aX
-{'name': 'Ivysaur', 'types': ['GRASS', 'POISON'], 'hp': '60', 'attack': '62', 'defense': '63', 'special attack': '80', 'special defe
-nse': '80', 'speed': '60'}X
+During handling of the above exception, another exception occurred:X
 X
-DevTools listening on ws://127.0.0.1:55718/devtools/browser/c1b6a607-9a5d-4ee9-8325-c63e7a3886f5X
-{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
-fense': '100', 'speed': '80'}X
-X
-DevTools listening on ws://127.0.0.1:55744/devtools/browser/2091dac0-8ce8-4723-9d32-5da828f4e344X
-{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '100', 'defense': '123', 'special attack': '122', 'special 
-defense': '120', 'speed': '80'}X
-X
-X
-XX
-DevTools listening on ws://127.0.0.1:55679/devtools/browser/37b14c9d-3aa8-49b3-a22d-cf8ab0a2f19aX
-{'name': 'Ivysaur', 'types': ['GRASS', 'POISON'], 'hp': '60', 'attack': '62', 'defense': '63', 'special attack': '80', 'special defe
-nse': '80', 'speed': '60'}X
-X
-DevTools listening on ws://127.0.0.1:55718/devtools/browser/c1b6a607-9a5d-4ee9-8325-c63e7a3886f5X
-{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
-fense': '100', 'speed': '80'}X
-X
-DevTools listening on ws://127.0.0.1:55744/devtools/browser/2091dac0-8ce8-4723-9d32-5da828f4e344X
-{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '100', 'defense': '123', 'special attack': '122', 'special 
-defense': '120', 'speed': '80'}X
-XX
-DevTools listening on ws://127.0.0.1:55679/devtools/browser/37b14c9d-3aa8-49b3-a22d-cf8ab0a2f19aX
-{'name': 'Ivysaur', 'types': ['GRASS', 'POISON'], 'hp': '60', 'attack': '62', 'defense': '63', 'special attack': '80', 'special defe
-nse': '80', 'speed': '60'}X
-X
-DevTools listening on ws://127.0.0.1:55718/devtools/browser/c1b6a607-9a5d-4ee9-8325-c63e7a3886f5X
-{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
-fense': '100', 'speed': '80'}X
-X
-DevTools listening on ws://127.0.0.1:55744/devtools/browser/2091dac0-8ce8-4723-9d32-5da828f4e344X
-{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '100', 'defense': '123', 'special attack': '122', 'special 
-defense': '120', 'speed': '80'}X
+Traceback (most recent call last):X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 90, in <module>X
+    main()X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 76, in mainX
+    scrape(4)X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 47, in scrapeX
+    driver.quit()X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 231
+, in quitX
+X    self.service.stop()
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 147, in
+ stopX
+X    self.send_remote_shutdown_command()
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 128, in
+ send_remote_shutdown_commandX
+    if not self.is_connectable():X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 116, in
+ is_connectableX
+    return utils.is_connectable(self.port)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\utils.py", line 107, in i
+s_connectableX
+X    socket_ = socket.create_connection((host, port), 1)
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connectionX
+    sock.connect(sa)X
+KeyboardInterruptX
+X  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 128, in
+ send_remote_shutdown_commandX
+    if not self.is_connectable():X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 116, in
+ is_connectableX
+    return utils.is_connectable(self.port)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\utils.py", line 107, in i
+s_connectableX
+    socket_ = socket.create_connection((host, port), 1)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connectionX
+    sock.connect(sa)X
+KeyboardInterruptX
 PS 
