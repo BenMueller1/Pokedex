@@ -1,40 +1,35 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
 X
-DevTools listening on ws://127.0.0.1:54878/devtools/browser/dd422d19-b0de-4ad1-a82b-8d0262beeea7X
+DevTools listening on ws://127.0.0.1:53620/devtools/browser/7a194abb-e996-4dfa-a8c5-fa79c78a434eX
 X> c:\users\benjm\git\codehistoriespythonprojects\pokedex\pokedex.py(33)scrape()
 -> row_data = row.find_elements(By.TAG_NAME, "td")X
-(Pdb)Xcontinue
+(Pdb)Xquit()row_datacontinue [30948:19980:0622/223809.094:ERROR:device_event_log_impl.cc(214)] [22:38:09.095] USB: usb_device_handle_win.cc:1048 Fa
+iled to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)X
+Xrow_data quit()   row_datacontinue quit()   continue
 X> c:\users\benjm\git\codehistoriespythonprojects\pokedex\pokedex.py(35)scrape()
 -> poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").textX
-(Pdb)X[32400:10064:0622/223730.984:ERROR:util.cc(127)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
-X[35960:27012:0622/223732.475:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101
-X[35960:27012:0622/223732.547:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101
-X[35412:33228:0622/223733.532:ERROR:device_event_log_impl.cc(214)] [22:37:33.532] USB: usb_device_handle_win.cc:1048 Failed to read d
-escriptor from node connection: A device attached to the system is not functioning. (0x1F)X
-Xrow_data
-X[]
-(Pdb)Xquit* ()
-XTraceback (most recent call last):
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 83, in <module>X
-    main()X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 71, in mainX
-    scrape(1)X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 35, in scrapeX
-    poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").textX
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 35, in scrapeX
-    poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").textX
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 90, in trace_dispatchX
-    return self.dispatch_line(frame)X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 115, in dispatch_lineX
-    if self.quitting: raise BdbQuitX
-bdb.BdbQuitX
-X    poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").textX
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 35, in scrapeX
-    poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").textX
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 90, in trace_dispatchX
-    return self.dispatch_line(frame)X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 115, in dispatch_lineX
-    if self.quitting: raise BdbQuitX
-bdb.BdbQuitX
+(Pdb)Xrow_data
+X[<selenium.webdriver.remote.webelement.WebElement (session="fef65475410a42fe97bffe417f144a24", element="f732cbdc-1ca5-4f90-aeab-6a99
+81e59d3a")>, <selenium.webdriver.remote.webelement.WebElement (session="fef65475410a42fe97bffe417f144a24", element="81e3fbdf-b522-45
+9e-ad30-7071d1d6d013")>, <selenium.webdriver.remote.webelement.WebElement (session="fef65475410a42fe97bffe417f144a24", element="76ce
+6d88-fbba-4ff9-80b2-c85e53002d53")>, <selenium.webdriver.remote.webelement.WebElement (session="fef65475410a42fe97bffe417f144a24", e
+lement="fa85543d-906e-4bc9-91fb-a204478c17fe")>, <selenium.webdriver.remote.webelement.WebElement (session="fef65475410a42fe97bffe41
+7f144a24", element="9dc01949-fbfb-4b23-b7df-4ea9eca0f42d")>, <selenium.webdriver.remote.webelement.WebElement (session="fef65475410a
+42fe97bffe417f144a24", element="a275140d-91be-4eaf-829b-2f50c6626f43")>, <selenium.webdriver.remote.webelement.WebElement (session="
+fef65475410a42fe97bffe417f144a24", element="218c42d0-8bd9-484a-a9b4-d13aaa96ba60")>, <selenium.webdriver.remote.webelement.WebElemen
+t (session="fef65475410a42fe97bffe417f144a24", element="34add2c5-710b-4b04-ace5-bf088b40e058")>, <selenium.webdriver.remote.webeleme
+nt.WebElement (session="fef65475410a42fe97bffe417f144a24", element="513ed2f5-dbe8-476c-8fb0-0da8d5b16090")>, <selenium.webdriver.rem
+ote.webelement.WebElement (session="fef65475410a42fe97bffe417f144a24", element="0649dd81-4886-4872-a038-58a57dbdb1b1")>]X
+(Pdb)Xcontinue
+X{'name': 'Ivysaur', 'types': ['GRASS', 'POISON'], 'hp': '60', 'attack': '62', 'defense': '63', 'special attack': '80', 'special defe
+nse': '80', 'speed': '60'}X
+X42fe97bffe417f144a24", element="a275140d-91be-4eaf-829b-2f50c6626f43")>, <selenium.webdriver.remote.webelement.WebElement (session="
+fef65475410a42fe97bffe417f144a24", element="218c42d0-8bd9-484a-a9b4-d13aaa96ba60")>, <selenium.webdriver.remote.webelement.WebElemen
+t (session="fef65475410a42fe97bffe417f144a24", element="34add2c5-710b-4b04-ace5-bf088b40e058")>, <selenium.webdriver.remote.webeleme
+nt.WebElement (session="fef65475410a42fe97bffe417f144a24", element="513ed2f5-dbe8-476c-8fb0-0da8d5b16090")>, <selenium.webdriver.rem
+ote.webelement.WebElement (session="fef65475410a42fe97bffe417f144a24", element="0649dd81-4886-4872-a038-58a57dbdb1b1")>]X
+(Pdb) continueX
+{'name': 'Ivysaur', 'types': ['GRASS', 'POISON'], 'hp': '60', 'attack': '62', 'defense': '63', 'special attack': '80', 'special defe
+nse': '80', 'speed': '60'}X
 PS 

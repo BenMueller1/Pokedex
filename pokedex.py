@@ -68,7 +68,8 @@ def run_gui():
 
 
 def main():
-    scrape(1)
+    # scrape(1) does not work
+    scrape(2)
     return
 
     run_gui()  # gui is initially empty, prompts user to enter a pokemon ID
