@@ -12,9 +12,9 @@ import chromedriver_autoinstaller
 # idea, we could just scrape the data once and save locally in a json file to make lookup super easy
 
 # get the pokemon whose id is in the entry field, clear the field, then display the data
-def get_pokemon(entry_var):
+def get_pokemon():
     # get id from entry field and clear field
-    print(entry_var)
+    print('tst')
     #id = entry_var
 
     # scrape website for data about the id
@@ -28,7 +28,7 @@ def init_gui():
 
     l = tk.Label(text="poke ID: ")
     e = tk.Entry()
-    b = tk.Button(text="get", command=get_pokemon(entry_var), textvariable=entry_var)
+    b = tk.Button(text="get", command=get_pokemon, textvariable=entry_var)
     l.pack(); e.pack(); b.pack()
     window.mainloop()  # opens the window & runs event loop (blocking; listens for button clicks or keypresses)
 
