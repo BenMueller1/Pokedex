@@ -13,7 +13,7 @@ import chromedriver_autoinstaller
 # get the pokemon whose id is in the entry field, clear the field, then display the data
 
 def scrape(poke_id):
-    poke_data = {}
+    poke_data = {} #name, types, hp, attack, defense, special attack, special defense, speed, image
     chromedriver_autoinstaller.install() # install and add to path
     driver = webdriver.Chrome()
     driver.get("https://pokemondb.net/pokedex/all")
@@ -25,12 +25,22 @@ def scrape(poke_id):
     ).click()
 
     # use css selectors to find the nth child from the top of the html element that holds all of the rows
-    row = driver.find_element(
+    row = driver.find_element(  # this works
         By.CSS_SELECTOR,
         f"tr:nth-child({poke_id})"
     )
-    breakpoint()
-
+    row_data = row.find_elements(By.TAG_NAME, "td") 
+    poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").text
+    poke_data["types"] = [typ.text for typ in list(row_data[2].find_elements(By.TAG_NAME, "a"))]
+    poke_data["hp"] = row_data[4].text
+    poke_data["attack"] = row_data[5].text
+    poke_data["defense"] = row_data[6].text
+    poke_data["special attack"] = row_data[7].text
+    poke_data["special defense"] = row_data[8].text
+    poke_data["speed"] = row_data[9].text
+    print(poke_data)
+    driver.close()
+    driver.quit()
     return poke_data
 
 
@@ -56,7 +66,7 @@ def run_gui():
 
 
 def main():
-    scrape(3)
+    scrape(4)
     return
 
     run_gui()  # gui is initially empty, prompts user to enter a pokemon ID
