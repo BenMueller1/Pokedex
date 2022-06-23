@@ -1,6 +1,18 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Users/benjm/git/codeHistories
 PythonProjects/Pokedex/pokedex.pyX
-NoneX
-NoneX
-NoneX
+XException in Tkinter callback
+XTraceback (most recent call last):
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__X
+    return self.func(*args)X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 17, in get_pokemonX
+    print(entry_var.get())X
+AttributeError: 'NoneType' object has no attribute 'get'X
+XPythonProjects/Pokedex/pokedex.pyX
+Exception in Tkinter callbackX
+Traceback (most recent call last):X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__X
+    return self.func(*args)X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 17, in get_pokemonX
+    print(entry_var.get())X
+AttributeError: 'NoneType' object has no attribute 'get'X
 PS 
