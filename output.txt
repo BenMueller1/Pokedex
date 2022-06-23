@@ -1,25 +1,34 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Users/benjm/git/codeHistories
 PythonProjects/Pokedex/pokedex.pyX
 X
-X
-X
-X
+DevTools listening on ws://127.0.0.1:61086/devtools/browser/ff5fbc75-9471-48af-9da1-ce3a3ce839baX
+X> c:\users\benjm\git\codehistoriespythonprojects\pokedex\pokedex.py(27)scrape()
+-> return poke_dataX
+(Pdb)X[6500:29196:0622/221647.018:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101
+X[27940:39824:0622/221648.328:ERROR:device_event_log_impl.cc(214)] [22:16:48.328] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connect
+ion: A device attached to the system is not functioning. (0x1F)X
+X--KeyboardInterrupt--
+X(Pdb) quit()
 XTraceback (most recent call last):
-X  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 47, in <module>
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 64, in <module>X
     main()X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 37, in mainX
-    init_gui()  # gui is initially empty, prompts user to enter a pokemon IDX
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 33, in init_guiX
-    window.mainloop()  # opens the window & runs event loop (blocking; listens for button clicks or keypresses)X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloopX
-    self.tk.mainloop(n)X
-KeyboardInterruptX
-X    main()X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 37, in mainX
-    init_gui()  # gui is initially empty, prompts user to enter a pokemon IDX
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 33, in init_guiX
-    window.mainloop()  # opens the window & runs event loop (blocking; listens for button clicks or keypresses)X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloopX
-    self.tk.mainloop(n)X
-KeyboardInterruptX
-XPS 
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 52, in mainX
+    scrape(3)X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 27, in scrapeX
+    return poke_dataX
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 27, in scrapeX
+    return poke_dataX
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 90, in trace_dispatchX
+X    return self.dispatch_line(frame)
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 115, in dispatch_lineX
+    if self.quitting: raise BdbQuitX
+bdb.BdbQuitX
+X    return poke_dataX
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 27, in scrapeX
+    return poke_dataX
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 90, in trace_dispatchX
+    return self.dispatch_line(frame)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 115, in dispatch_lineX
+    if self.quitting: raise BdbQuitX
+bdb.BdbQuitX
+PS 
