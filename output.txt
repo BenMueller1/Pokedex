@@ -1,27 +1,7 @@
-C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex>X
-X
-Xbdb.BdbQuit                                                & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
-ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyXbdb.BdbQuitX
-X> &bdb.BdbQuit                                              > & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
-ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
-    return poke_dataX
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 90, in trace_dispatchX
-    return self.dispatch_line(frame)X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 115, in dispatch_lineX
-    if self.quitting: raise BdbQuitX
-bdb.BdbQuit                                              > & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
+C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
 X
-X
-DevTools listening on ws://127.0.0.1:51541/devtools/browser/6b47f9c6-94c6-4bd8-81ad-dd30dc9a75ce
-X{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '100', 'defense': '123', 'special attack': '122', 'special 
-defense': '120', 'speed': '80'}X
-X  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 115, in dispatch_lineX
-    if self.quitting: raise BdbQuitX
-bdb.BdbQuit                                              > & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
-ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
-X
-DevTools listening on ws://127.0.0.1:51541/devtools/browser/6b47f9c6-94c6-4bd8-81ad-dd30dc9a75ceX
-{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '100', 'defense': '123', 'special attack': '122', 'special 
-defense': '120', 'speed': '80'}X
+DevTools listening on ws://127.0.0.1:51576/devtools/browser/09e5d302-852f-45d1-a09d-c3d9a23e1ebaX
+{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
+fense': '100', 'speed': '80'}X
 PS 
