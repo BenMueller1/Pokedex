@@ -1,40 +1,7 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
 X
-DevTools listening on ws://127.0.0.1:56123/devtools/browser/85c250a9-4441-45f0-be05-b7ad5018fec5X
-X> c:\users\benjm\git\codehistoriespythonprojects\pokedex\pokedex.py(31)scrape()
--> while (row_id != poke_id):X
-X(Pdb) row_i[41556:35788:0622/224736.455:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_e
-rror -101X
-Xd[41556:35788:0622/224736.518:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101
-X
-X3
-(Pdb)X[39752:36556:0622/224737.115:ERROR:device_event_log_impl.cc(214)] [22:47:37.116] USB: usb_device_handle_win.cc:1048 Failed to 
-read descriptor from node connection: A device attached to the system is not functioning. (0x1F)X
-Xrow_id
-X3
-(Pdb)Xpoke) _id
-X4
-(Pdb)Xcontinue
-X> c:\users\benjm\git\codehistoriespythonprojects\pokedex\pokedex.py(31)scrape()
--> while (row_id != poke_id):X
-(Pdb)Xrow_id
-X4
-(Pdb)Xpoke_id
-X4
-(Pdb)Xconit  tinue
-X{'name': 'Charmander', 'types': ['FIRE'], 'hp': '39', 'attack': '52', 'defense': '43', 'special attack': '60', 'special defense': '5
-0', 'speed': '65'}X
-X(Pdb) poke_idX
-4X
-(Pdb) continueX
-> c:\users\benjm\git\codehistoriespythonprojects\pokedex\pokedex.py(31)scrape()X
--> while (row_id != poke_id):X
-(Pdb) row_idX
-4X
-(Pdb) poke_idX
-4X
-(Pdb) continueX
-{'name': 'Charmander', 'types': ['FIRE'], 'hp': '39', 'attack': '52', 'defense': '43', 'special attack': '60', 'special defense': '5
-0', 'speed': '65'}X
+DevTools listening on ws://127.0.0.1:51423/devtools/browser/b571acd2-dfa4-48d7-a767-ed30b73b3522X
+{'name': 'Squirtle', 'types': ['WATER'], 'hp': '44', 'attack': '48', 'defense': '65', 'special attack': '50', 'special defense': '64
+', 'speed': '43'}X
 PS 

@@ -25,7 +25,7 @@ def scrape(poke_id):
     ).click()
 
     # use css selectors to find the nth child from the top of the html element that holds all of the rows
-    # need to find first element with data-sort-value equal to poke_id
+    # scrolls down from poke-idth row until the id of the pokemon in the row matches poke-id
     row_id = 0
     i = poke_id-1
     while (row_id != poke_id):
@@ -39,7 +39,6 @@ def scrape(poke_id):
             "span:nth-child(2)"
         ).text
         row_id = int(row_id)
-        breakpoint()
 
     #breakpoint()
     row_data = row.find_elements(By.TAG_NAME, "td") 
@@ -83,7 +82,7 @@ def run_gui():
 
 def main():
     # scrape(1) does not work
-    scrape(4)
+    scrape(7)
     return
 
     run_gui()  # gui is initially empty, prompts user to enter a pokemon ID
