@@ -1,7 +1,3 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Users/benjm/git/codeHistories
 PythonProjects/Pokedex/pokedex.pyX
-X
-DevTools listening on ws://127.0.0.1:60766/devtools/browser/2528c72d-bcf9-4b36-a0ee-f164293ff0f6X
-[27232:25500:0622/215715.899:ERROR:device_event_log_impl.cc(214)] [21:57:15.900] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connect
-ion: A device attached to the system is not functioning. (0x1F)X
 PS 
