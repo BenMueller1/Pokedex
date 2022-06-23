@@ -1,18 +1,32 @@
 import tkinter as tk
-import selenium 
 
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
 
+import chromedriver_autoinstaller
+
+#chromedriver_autoinstaller.install() # install and add to path
+#driver = webdriver.Chrome()
 
 # idea, we could just scrape the data once and save locally in a json file to make lookup super easy
+
+# get the pokemon whose id is in the entry field, clear the field, then display the data
+def get_pokemon():
+    # get id from entry field and clear field
+
+    # scrape website for data about the id
+    pass
+
 
 def init_gui():
     window = tk.Tk()
     window.geometry("400x400")
+    entry_var = tk.StringVar()
 
-    l = tk.Label(text="poke ID: ")
-    l.pack()
-    e = tk.Entry()
-    e.pack()
+    l = tk.Label(window, text="poke ID: ")
+    e = tk.Entry(window)
+    b = tk.Button(window, command=get_pokemon)
     window.mainloop()  # opens the window & runs event loop (blocking; listens for button clicks or keypresses)
 
 
