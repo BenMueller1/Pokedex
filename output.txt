@@ -1,26 +1,7 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
-XException in Tkinter callback
-XTraceback (most recent call last):
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__X
-    return self.func(*args)X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 75, in get_pokemonX
-    poke_data = scrape(int(poke_id))X
-ValueError: invalid literal for int() with base 10: ''X
 X
-DevTools listening on ws://127.0.0.1:65085/devtools/browser/e3a6508d-a03a-4751-bcf2-26e0f37dcd7fX
-X{'name': 'Charmander', 'types': ['FIRE'], 'hp': '39', 'attack': '52', 'defense': '43', 'special attack': '60', 'special defense': '5
-0', 'speed': '65'}X
-Xers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
-Exception in Tkinter callbackX
-Traceback (most recent call last):X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__X
-    return self.func(*args)X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 75, in get_pokemonX
-    poke_data = scrape(int(poke_id))X
-ValueError: invalid literal for int() with base 10: ''X
-X
-DevTools listening on ws://127.0.0.1:65085/devtools/browser/e3a6508d-a03a-4751-bcf2-26e0f37dcd7fX
+DevTools listening on ws://127.0.0.1:65142/devtools/browser/0e976268-5f0e-4a8b-b044-305642c0f9a7X
 {'name': 'Charmander', 'types': ['FIRE'], 'hp': '39', 'attack': '52', 'defense': '43', 'special attack': '60', 'special defense': '5
 0', 'speed': '65'}X
-XPS 
+PS 

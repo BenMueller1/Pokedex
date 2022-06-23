@@ -78,7 +78,7 @@ def get_pokemon(entry_var):
 
 def update_gui_fields():
     name.set(f"Name: {poke_data['name']}")
-    types.set(f"HP: {poke_data['types']}")
+    types.set(f"Types: {poke_data['types']}")
     hp.set(f"HP: {poke_data['hp']}")
     attack.set(f"Attack: {poke_data['attack']}")
     defense.set(f"Defense: {poke_data['defense']}")
