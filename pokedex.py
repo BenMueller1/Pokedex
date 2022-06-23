@@ -12,7 +12,7 @@ def init_gui():
     l = tk.Label(text="poke ID: ")
     l.pack()
     e = tk.Entry()
-    e.pack(side=tk.RIGHT)
+    e.pack()
     window.mainloop()  # opens the window & runs event loop (blocking; listens for button clicks or keypresses)
 
 
