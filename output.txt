@@ -1,7 +1,26 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
+XException in Tkinter callback
+XTraceback (most recent call last):
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__X
+    return self.func(*args)X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 75, in get_pokemonX
+    poke_data = scrape(int(poke_id))X
+ValueError: invalid literal for int() with base 10: ''X
 X
-DevTools listening on ws://127.0.0.1:65019/devtools/browser/333c1f1e-44be-4b1c-8b22-0dde5e329be1X
-{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
-fense': '100', 'speed': '80'}X
-PS 
+DevTools listening on ws://127.0.0.1:65085/devtools/browser/e3a6508d-a03a-4751-bcf2-26e0f37dcd7fX
+X{'name': 'Charmander', 'types': ['FIRE'], 'hp': '39', 'attack': '52', 'defense': '43', 'special attack': '60', 'special defense': '5
+0', 'speed': '65'}X
+Xers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
+Exception in Tkinter callbackX
+Traceback (most recent call last):X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__X
+    return self.func(*args)X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 75, in get_pokemonX
+    poke_data = scrape(int(poke_id))X
+ValueError: invalid literal for int() with base 10: ''X
+X
+DevTools listening on ws://127.0.0.1:65085/devtools/browser/e3a6508d-a03a-4751-bcf2-26e0f37dcd7fX
+{'name': 'Charmander', 'types': ['FIRE'], 'hp': '39', 'attack': '52', 'defense': '43', 'special attack': '60', 'special defense': '5
+0', 'speed': '65'}X
+XPS 
