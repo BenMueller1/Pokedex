@@ -17,6 +17,13 @@ def scrape(poke_id):
     chromedriver_autoinstaller.install() # install and add to path
     driver = webdriver.Chrome()
     driver.get("https://pokemondb.net/pokedex/all")
+
+    # close out of the ad notification that pops up when site is visited
+    driver.find_element(
+        By.CLASS_NAME,
+        "btn-primary"
+    ).click()
+
     # use css selectors to find the nth child from the top of the html element that holds all of the rows
     row = driver.find_element(
         By.CSS_SELECTOR,
