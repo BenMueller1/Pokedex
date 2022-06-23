@@ -8,9 +8,9 @@ import selenium
 def init_gui():
     window = tk.Tk()
     greeting = tk.Label(text="poke ID: ")
-    greeting.pack()
+    greeting.pack(side=tk.LEFT)
     e = tk.Entry()
-    e.pack()
+    e.pack(side=tk.RIGHT)
     window.mainloop()  # opens the window & runs event loop (blocking; listens for button clicks or keypresses)
 
 
