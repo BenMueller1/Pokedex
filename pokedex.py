@@ -13,7 +13,7 @@ import chromedriver_autoinstaller
 # get the pokemon whose id is in the entry field, clear the field, then display the data
 def get_pokemon():
     # get id from entry field and clear field
-    print(entry_var.get())
+    print(str(entry_var.get()))
     #id = entry_var
 
     # scrape website for data about the id
