@@ -74,8 +74,21 @@ def get_pokemon(entry_var):
     poke_id = entry_var.get()
     poke_data = scrape(int(poke_id))
     entry_var.set("") # clear entry firld
+    update_gui_fields()
+
+def update_gui_fields():
+    name.set(f"Name: {poke_data['name']}")
+    types.set(f"HP: {poke_data['types']}")
+    hp.set(f"HP: {poke_data['hp']}")
+    attack.set(f"Attack: {poke_data['attack']}")
+    defense.set(f"Defense: {poke_data['defense']}")
+    sp_attack.set(f"Special Attack: {poke_data['special attack']}")
+    sp_defense.set(f"Special Defense: {poke_data['special defense']}")
+    speed.set(f"Speed: {poke_data['speed']}")
+
 
 def run_gui():
+    global name, types, hp, attack, defense, sp_attack, sp_defense, speed
     window = tk.Tk()
     window.geometry("400x400")
     entry_var = tk.StringVar()
@@ -84,19 +97,27 @@ def run_gui():
     e = tk.Entry(textvariable=entry_var)
     b = tk.Button(text="get", command=partial(get_pokemon, entry_var))
     l.pack(); e.pack(); b.pack(); 
-    while True:
-        l1 = tk.Label(text=f"Name: {poke_data['name']}")
-        l2 = tk.Label(text=f"Types: {poke_data['types']}")
-        l3 = tk.Label(text=f"HP: {poke_data['hp']}")
-        l4 = tk.Label(text=f"Attack: {poke_data['attack']}")
-        l5 = tk.Label(text=f"Defense: {poke_data['defense']}")
-        l6 = tk.Label(text=f"Special Attack: {poke_data['special attack']}")
-        l7 = tk.Label(text=f"Special Defense: {poke_data['special defense']}")
-        l8 = tk.Label(text=f"Speed: {poke_data['speed']}")
-        l1.pack(); l2.pack(); l3.pack(); l4.pack() 
-        l5.pack(); l6.pack(); l7.pack(); l8.pack()
-        window.mainloop()  # opens the window & runs event loop (blocking; listens for button clicks or keypresses)
-    
+    # TODO what I actually need to do is assign a text variable to each label to update it
+    # print(poke_data)
+    name = tk.StringVar(value=f"Name: {poke_data['name']}")
+    types = tk.StringVar(value=f"Types: {poke_data['types']}")
+    hp = tk.StringVar(value=f"HP: {poke_data['hp']}")
+    attack = tk.StringVar(value=f"Attack: {poke_data['attack']}")
+    defense = tk.StringVar(value=f"Defense: {poke_data['defense']}")
+    sp_attack = tk.StringVar(value=f"Special Attack: {poke_data['special attack']}")
+    sp_defense = tk.StringVar(value=f"Special Defense: {poke_data['special defense']}")
+    speed = tk.StringVar(value=f"Speed: {poke_data['speed']}")
+    l1 = tk.Label(textvariable=name)
+    l2 = tk.Label(textvariable=types)
+    l3 = tk.Label(textvariable=hp)
+    l4 = tk.Label(textvariable=attack)
+    l5 = tk.Label(textvariable=defense)
+    l6 = tk.Label(textvariable=sp_attack)
+    l7 = tk.Label(textvariable=sp_defense)
+    l8 = tk.Label(textvariable=speed)
+    l1.pack(); l2.pack(); l3.pack(); l4.pack() 
+    l5.pack(); l6.pack(); l7.pack(); l8.pack()
+    window.mainloop()  #TODO PROBLEM: this is blocking
 
 
 def main():

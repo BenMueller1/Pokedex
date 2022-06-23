@@ -1,29 +1,7 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
 X
-DevTools listening on ws://127.0.0.1:64478/devtools/browser/08323594-f179-4c93-9ae9-fc1fb5152f26X
-X{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
+DevTools listening on ws://127.0.0.1:65019/devtools/browser/333c1f1e-44be-4b1c-8b22-0dde5e329be1X
+{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
 fense': '100', 'speed': '80'}X
-XTraceback (most recent call last):
-X  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 115, in <module>
-    main()X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 108, in mainX
-    run_gui()  # gui is initially empty, prompts user to enter a pokemon IDX
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 98, in run_guiX
-    window.mainloop()  # opens the window & runs event loop (blocking; listens for button clicks or keypresses)X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloopX
-    self.tk.mainloop(n)X
-KeyboardInterruptX
-X{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
-fense': '100', 'speed': '80'}X
-Traceback (most recent call last):X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 115, in <module>X
-    main()X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 108, in mainX
-    run_gui()  # gui is initially empty, prompts user to enter a pokemon IDX
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 98, in run_guiX
-    window.mainloop()  # opens the window & runs event loop (blocking; listens for button clicks or keypresses)X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloopX
-    self.tk.mainloop(n)X
-KeyboardInterruptX
 PS 
