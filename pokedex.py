@@ -1,5 +1,5 @@
 import tkinter as tk
-
+import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -83,19 +83,20 @@ def run_gui():
     l = tk.Label(text="poke ID: ")
     e = tk.Entry(textvariable=entry_var)
     b = tk.Button(text="get", command=partial(get_pokemon, entry_var))
-
-    l1 = tk.Label(text=f"Name: {poke_data['name']}")
-    l2 = tk.Label(text=f"Types: {poke_data['types']}")
-    l3 = tk.Label(text=f"HP: {poke_data['hp']}")
-    l4 = tk.Label(text=f"Attack: {poke_data['attack']}")
-    l5 = tk.Label(text=f"Defense: {poke_data['defense']}")
-    l6 = tk.Label(text=f"Special Attack: {poke_data['special attack']}")
-    l7 = tk.Label(text=f"Special Defense: {poke_data['special defense']}")
-    l8 = tk.Label(text=f"Speed: {poke_data['speed']}")
-
-    l.pack(); e.pack(); b.pack(); l1.pack(); l2.pack() 
-    l3.pack(); l4.pack(); l5.pack(); l6.pack(); l7.pack(); l8.pack()
-    window.mainloop()  # opens the window & runs event loop (blocking; listens for button clicks or keypresses)
+    l.pack(); e.pack(); b.pack(); 
+    while True:
+        l1 = tk.Label(text=f"Name: {poke_data['name']}")
+        l2 = tk.Label(text=f"Types: {poke_data['types']}")
+        l3 = tk.Label(text=f"HP: {poke_data['hp']}")
+        l4 = tk.Label(text=f"Attack: {poke_data['attack']}")
+        l5 = tk.Label(text=f"Defense: {poke_data['defense']}")
+        l6 = tk.Label(text=f"Special Attack: {poke_data['special attack']}")
+        l7 = tk.Label(text=f"Special Defense: {poke_data['special defense']}")
+        l8 = tk.Label(text=f"Speed: {poke_data['speed']}")
+        l1.pack(); l2.pack(); l3.pack(); l4.pack() 
+        l5.pack(); l6.pack(); l7.pack(); l8.pack()
+        window.mainloop()  # opens the window & runs event loop (blocking; listens for button clicks or keypresses)
+    
 
 
 def main():
