@@ -24,9 +24,10 @@ def init_gui():
     window.geometry("400x400")
     entry_var = tk.StringVar()
 
-    l = tk.Label(window, text="poke ID: ")
-    e = tk.Entry(window)
-    b = tk.Button(window, command=get_pokemon)
+    l = tk.Label(text="poke ID: ")
+    e = tk.Entry()
+    b = tk.Button(command=get_pokemon)
+    l.pack(); e.pack(); b.pack()
     window.mainloop()  # opens the window & runs event loop (blocking; listens for button clicks or keypresses)
 
 
