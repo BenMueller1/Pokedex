@@ -7,9 +7,11 @@ import selenium
 
 def init_gui():
     window = tk.Tk()
-    greeting = tk.Label(text="Hello, Tkinter")
+    greeting = tk.Label(text="poke ID: ")
     greeting.pack()
-    window.mainloop()
+    e = tk.Entry()
+    e.pack()
+    window.mainloop()  # opens the window & runs event loop (blocking; listens for button clicks or keypresses)
 
 
 def main():
