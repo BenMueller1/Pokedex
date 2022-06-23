@@ -1,42 +1,3 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
-X
-DevTools listening on ws://127.0.0.1:53568/devtools/browser/d556f5f0-87f2-4050-abad-29c7b48424b1X
-X> c:\users\benjm\git\codehistoriespythonprojects\pokedex\pokedex.py(72)scrape()
--> driver.close()X
-(Pdb)X[31860:27148:0623/002223.618:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error 
--101X
-X[31860:27148:0623/002223.697:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101
-X[25404:27220:0623/002224.018:ERROR:device_event_log_impl.cc(214)] [00:22:24.018] USB: usb_device_handle_win.cc:1048 Failed to read d
-escriptor from node connection: A device attached to the system is not functioning. (0x1F)X
-Xpoke_data["image_url"]
-X'https://img.pokemondb.net/sprites/sword-shield/icon/venusaur.png'
-(Pdb)Xquit()
-XException in Tkinter callback
-Traceback (most recent call last):X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__X
-    return self.func(*args)X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 81, in get_pokemonX
-    poke_data = scrape(int(poke_id))X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 72, in scrapeX
-    driver.close()X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 72, in scrapeX
-    driver.close()X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 90, in trace_dispatchX
-    return self.dispatch_line(frame)X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 115, in dispatch_lineX
-    if self.quitting: raise BdbQuitX
-bdb.BdbQuitX
-X    return self.func(*args)X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 81, in get_pokemonX
-    poke_data = scrape(int(poke_id))X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 72, in scrapeX
-    driver.close()X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 72, in scrapeX
-    driver.close()X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 90, in trace_dispatchX
-    return self.dispatch_line(frame)X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 115, in dispatch_lineX
-    if self.quitting: raise BdbQuitX
-bdb.BdbQuitX
 PS 
