@@ -29,6 +29,7 @@ def scrape(poke_id):
         By.CSS_SELECTOR,
         f"tr:nth-child({poke_id})"
     )
+    breakpoint()
     row_data = row.find_elements(By.TAG_NAME, "td") 
     poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").text
     poke_data["types"] = [typ.text for typ in list(row_data[2].find_elements(By.TAG_NAME, "a"))]

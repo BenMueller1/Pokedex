@@ -1,21 +1,43 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
 X
-DevTools listening on ws://127.0.0.1:51637/devtools/browser/3f8a5060-bb2c-459f-b851-63b8a19df1cdX
+DevTools listening on ws://127.0.0.1:51686/devtools/browser/68e104bf-75cb-4661-87f0-0549d4ae55beX
+X> c:\users\benjm\git\codehistoriespythonprojects\pokedex\pokedex.py(33)scrape()
+-> row_data = row.find_elements(By.TAG_NAME, "td")X
+(Pdb)Xrow
+X<selenium.webdriver.remote.webelement.WebElement (session="76704275c263d9533d5161fe0da5d2b0", element="3ee41068-c358-40c1-b661-62dbe
+aa37def")>X
+(Pdb)X[4112:27156:0622/223636.890:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -
+101X
+X[32400:7524:0622/223637.155:ERROR:device_event_log_impl.cc(214)] [22:36:37.154] USB: usb_device_handle_win.cc:1048 Failed to read de
+scriptor from node connection: A device attached to the system is not functioning. (0x1F)X
+Xrow.tag   type
+X*** AttributeError: 'WebElement' object has no attribute 'type'
+(Pdb)Xrow.tagName
+X*** AttributeError: 'WebElement' object has no attribute 'tagName'
+(Pdb)Xrow.tag_a name
+X'tr'
+X(Pdb) quit()
 XTraceback (most recent call last):
-X  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 81, in <module>
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 82, in <module>X
     main()X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 69, in mainX
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 70, in mainX
     scrape(1)X
   File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 33, in scrapeX
-    poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").textX
-IndexError: list index out of rangeX
-XTraceback (most recent call last):X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 81, in <module>X
-    main()X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 69, in mainX
-    scrape(1)X
+    row_data = row.find_elements(By.TAG_NAME, "td")X
   File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 33, in scrapeX
-    poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").textX
-IndexError: list index out of rangeX
+    row_data = row.find_elements(By.TAG_NAME, "td")X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 90, in trace_dispatchX
+    return self.dispatch_line(frame)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 115, in dispatch_lineX
+    if self.quitting: raise BdbQuitX
+bdb.BdbQuitX
+X    row_data = row.find_elements(By.TAG_NAME, "td")X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 33, in scrapeX
+    row_data = row.find_elements(By.TAG_NAME, "td")X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 90, in trace_dispatchX
+    return self.dispatch_line(frame)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\bdb.py", line 115, in dispatch_lineX
+    if self.quitting: raise BdbQuitX
+bdb.BdbQuitX
 PS 
