@@ -9,7 +9,7 @@ def init_gui():
     window = tk.Tk()
     greeting = tk.Label(text="Hello, Tkinter")
     greeting.pack()
-    print('is this working?')
+    window.mainloop()
 
 
 def main():
