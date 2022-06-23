@@ -1,4 +1,4 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Microsoft/WindowsApps/python3.9.exe c:/Users/benjm/git/codeHistoriesP
 ythonProjects/Pokedex/pokedex.pyX
 make sure code histories workingX
-XPS 
+PS 
