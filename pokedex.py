@@ -9,6 +9,8 @@ import chromedriver_autoinstaller
 from functools import partial
 from PIL import ImageTk, Image
 
+import urllib.request
+
 # TODO make a version of this that uses the API instead of web scraping
 
 
@@ -93,7 +95,8 @@ def update_gui_fields():
     sp_defense.set(f"Special Defense: {poke_data['special defense']}")
     speed.set(f"Speed: {poke_data['speed']}")
     breakpoint()
-    img = ImageTk.PhotoImage(Image.open(poke_data['image_url']))
+    urllib.request.urlretrieve(poke_data['image_url'], "img.png")
+    img = ImageTk.PhotoImage(Image.open("img.png"))
 
 def run_gui():
     global name, types, hp, attack, defense, sp_attack, sp_defense, speed, img

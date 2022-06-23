@@ -1,33 +1,43 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
 X
-DevTools listening on ws://127.0.0.1:51134/devtools/browser/c9ce9561-7ac8-44c8-a2bd-fa9bc9a8a2a3X
-X> c:\users\benjm\git\codehistoriespythonprojects\pokedex\pokedex.py(96)update_gui_fields()
--> img = ImageTk.PhotoImage(Image.open(poke_data['image_url']))X
-(Pdb)Xim  poke) _data["image_url"]
-X'https://img.pokemondb.net/sprites/sword-shield/icon/venusaur.png'
-(Pdb)Xcontinu       continue
+DevTools listening on ws://127.0.0.1:64320/devtools/browser/93584481-6519-4d6c-a744-b683f5c8dc00X
+X> c:\users\benjm\git\codehistoriespythonprojects\pokedex\pokedex.py(98)update_gui_fields()
+-> urllib.request.urlretrieve(poke_data['image_url'], "img.png")X
+(Pdb)Xcontinue
 XException in Tkinter callback
-Traceback (most recent call last):X
+XTraceback (most recent call last):
   File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__X
     return self.func(*args)X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 83, in get_pokemonX
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 85, in get_pokemonX
     update_gui_fields()X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 96, in update_gui_fieldsX
-    img = ImageTk.PhotoImage(Image.open(poke_data['image_url']))X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\PIL\Image.py", line 3068, in openX
-    fp = builtins.open(filename, "rb")X
-OSError: [Errno 22] Invalid argument: 'https://img.pokemondb.net/sprites/sword-shield/icon/venusaur.png'X
-X(Pdb) continueX
-Exception in Tkinter callbackX
-Traceback (most recent call last):X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__X
-    return self.func(*args)X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 83, in get_pokemonX
-    update_gui_fields()X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 96, in update_gui_fieldsX
-    img = ImageTk.PhotoImage(Image.open(poke_data['image_url']))X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\PIL\Image.py", line 3068, in openX
-    fp = builtins.open(filename, "rb")X
-OSError: [Errno 22] Invalid argument: 'https://img.pokemondb.net/sprites/sword-shield/icon/venusaur.png'X
-XPS 
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 98, in update_gui_fieldsX
+    urllib.request.urlretrieve(poke_data['image_url'], "img.png")X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 241, in urlretrieveX
+    with contextlib.closing(urlopen(url, data)) as fp:X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 216, in urlopenX
+    return opener.open(url, data, timeout)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 525, in openX
+    response = meth(req, response)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 634, in http_responseX
+    response = self.parent.error(X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 563, in errorX
+    return self._call_chain(*args)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 496, in _call_chainX
+    result = func(*args)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 643, in http_error_defaultX
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)X
+urllib.error.HTTPError: HTTP Error 403: ForbiddenX
+X    return opener.open(url, data, timeout)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 525, in openX
+    response = meth(req, response)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 634, in http_responseX
+    response = self.parent.error(X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 563, in errorX
+    return self._call_chain(*args)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 496, in _call_chainX
+    result = func(*args)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\urllib\request.py", line 643, in http_error_defaultX
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)X
+urllib.error.HTTPError: HTTP Error 403: ForbiddenX
+PS 
