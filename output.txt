@@ -1,7 +1,29 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
 X
-DevTools listening on ws://127.0.0.1:65142/devtools/browser/0e976268-5f0e-4a8b-b044-305642c0f9a7X
-{'name': 'Charmander', 'types': ['FIRE'], 'hp': '39', 'attack': '52', 'defense': '43', 'special attack': '60', 'special defense': '5
+DevTools listening on ws://127.0.0.1:65188/devtools/browser/50673017-6fd8-421b-8be4-b3205a9f834cX
+X{'name': 'Charmander', 'types': ['FIRE'], 'hp': '39', 'attack': '52', 'defense': '43', 'special attack': '60', 'special defense': '5
 0', 'speed': '65'}X
+XTraceback (most recent call last):
+X  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 136, in <module>
+    # populate_gui(poke_data)X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 129, in mainX
+    #     figure out why scrape(1) doesn't workX
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 120, in run_guiX
+X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloopX
+X    self.tk.mainloop(n)
+KeyboardInterruptX
+X{'name': 'Charmander', 'types': ['FIRE'], 'hp': '39', 'attack': '52', 'defense': '43', 'special attack': '60', 'special defense': '5
+0', 'speed': '65'}X
+Traceback (most recent call last):X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 136, in <module>X
+    # populate_gui(poke_data)X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 129, in mainX
+    #     figure out why scrape(1) doesn't workX
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 120, in run_guiX
+X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloopX
+    self.tk.mainloop(n)X
+KeyboardInterruptX
 PS 

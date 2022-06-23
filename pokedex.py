@@ -76,6 +76,7 @@ def get_pokemon(entry_var):
     entry_var.set("") # clear entry firld
     update_gui_fields()
 
+
 def update_gui_fields():
     name.set(f"Name: {poke_data['name']}")
     types.set(f"Types: {poke_data['types']}")
@@ -98,7 +99,7 @@ def run_gui():
     b = tk.Button(text="get", command=partial(get_pokemon, entry_var))
     l.pack(); e.pack(); b.pack(); 
     # TODO what I actually need to do is assign a text variable to each label to update it
-    # print(poke_data)
+
     name = tk.StringVar(value=f"Name: {poke_data['name']}")
     types = tk.StringVar(value=f"Types: {poke_data['types']}")
     hp = tk.StringVar(value=f"HP: {poke_data['hp']}")
@@ -107,6 +108,7 @@ def run_gui():
     sp_attack = tk.StringVar(value=f"Special Attack: {poke_data['special attack']}")
     sp_defense = tk.StringVar(value=f"Special Defense: {poke_data['special defense']}")
     speed = tk.StringVar(value=f"Speed: {poke_data['speed']}")
+
     l1 = tk.Label(textvariable=name)
     l2 = tk.Label(textvariable=types)
     l3 = tk.Label(textvariable=hp)
@@ -115,13 +117,17 @@ def run_gui():
     l6 = tk.Label(textvariable=sp_attack)
     l7 = tk.Label(textvariable=sp_defense)
     l8 = tk.Label(textvariable=speed)
+
+
     l1.pack(); l2.pack(); l3.pack(); l4.pack() 
     l5.pack(); l6.pack(); l7.pack(); l8.pack()
     window.mainloop()  #TODO PROBLEM: this is blocking
 
 
 def main():
-    # TODO scrape(1) does not work
+    # TODO------------------------
+    #     figure out why scrape(1) doesn't work
+    #     add images
     # scrape(1)
     # scrape(5)
     #  return
