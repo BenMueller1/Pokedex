@@ -1,82 +1,40 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
 X
-DevTools listening on ws://127.0.0.1:65411/devtools/browser/1b5e941b-a96a-4f91-b402-19e4e19cec80X
+DevTools listening on ws://127.0.0.1:56736/devtools/browser/b839bad9-79f0-4144-9006-59142a55749eX
 XException in Tkinter callback
 XTraceback (most recent call last):
   File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__X
     return self.func(*args)X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 75, in get_pokemonX
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 81, in get_pokemonX
     poke_data = scrape(int(poke_id))X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 47, in scrapeX
-    row_id = row.find_element(X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py", line 735,
- in find_elementX
-    return self._execute(Command.FIND_CHILD_ELEMENT,X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py", line 710,
- in _executeX
-    return self._parent.execute(command, params)X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 424, 
-in executeX
-    self.error_handler.check_response(response)X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 24
-7, in check_responseX
-    raise exception_class(message, screen, stacktrace)X
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","sel
-ector":"span:nth-child(2)"}X
-  (Session info: chrome=102.0.5005.115)X
-Stacktrace:X
-Backtrace:X
-        Ordinal0 [0x00B82733+2434867]X
-        Ordinal0 [0x00B107A1+1968033]X
-        Ordinal0 [0x009FC678+837240]X
-        Ordinal0 [0x00A294E0+1021152]X
-        Ordinal0 [0x00A2977B+1021819]X
-        Ordinal0 [0x00A1FCD1+982225]X
-        Ordinal0 [0x00A44484+1131652]X
-        Ordinal0 [0x00A1FC54+982100]X
-        Ordinal0 [0x00A44654+1132116]X
-        Ordinal0 [0x00A54892+1198226]X
-        Ordinal0 [0x00A44256+1131094]X
-        Ordinal0 [0x00A1E840+976960]X
-        Ordinal0 [0x00A1F736+980790]X
-        GetHandleVerifier [0x00DF3C72+2515426]X
-        GetHandleVerifier [0x00DE702F+2463135]X
-        GetHandleVerifier [0x00C2522A+620442]X
-        GetHandleVerifier [0x00C24016+615814]X
-        Ordinal0 [0x00B1707B+1994875]X
-        Ordinal0 [0x00B1B938+2013496]X
-        Ordinal0 [0x00B1BA25+2013733]X
-        Ordinal0 [0x00B24DE1+2051553]X
-        BaseThreadInitThunk [0x74ED6359+25]X
-        RtlGetAppContainerNamedObjectPath [0x770287A4+228]X
-        RtlGetAppContainerNamedObjectPath [0x77028774+180]X
-X
-X[13600:22212:0623/000608.010:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101
-X[13600:22212:0623/000608.015:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101
-X[13600:22212:0623/000608.749:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -201
-X[33624:12044:0623/000610.437:ERROR:device_event_log_impl.cc(214)] [00:06:10.437] USB: usb_device_handle_win.cc:1048 Failed to read d
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 62, in scrapeX
+    poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").textX
+IndexError: list index out of rangeX
+X[26100:37752:0623/000735.368:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101
+X[26100:37752:0623/000735.885:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -201
+X[41476:38144:0623/000737.143:ERROR:device_event_log_impl.cc(214)] [00:07:37.142] USB: usb_device_handle_win.cc:1048 Failed to read d
 escriptor from node connection: A device attached to the system is not functioning. (0x1F)X
 XTraceback (most recent call last):
-X  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 142, in <module>
-X    # populate_gui(poke_data)
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 135, in mainX
-    #     figure out why scrape(1) doesn't workX
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 124, in run_guiX
-    l7 = tk.Label(textvariable=sp_defense)X
+X  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 148, in <module>
+    main()X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 141, in mainX
+    run_gui()  # gui is initially empty, prompts user to enter a pokemon IDX
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 130, in run_guiX
+    window.mainloop()  #TODO PROBLEM: this is blockingX
   File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloopX
     self.tk.mainloop(n)X
 KeyboardInterruptX
-X[33624:12044:0623/000610.437:ERROR:device_event_log_impl.cc(214)] [00:06:10.437] USB: usb_device_handle_win.cc:1048 Failed to read d
+X[41476:38144:0623/000737.143:ERROR:device_event_log_impl.cc(214)] [00:07:37.142] USB: usb_device_handle_win.cc:1048 Failed to read d
 escriptor from node connection: A device attached to the system is not functioning. (0x1F)X
 Traceback (most recent call last):X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 142, in <module>X
-    # populate_gui(poke_data)X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 135, in mainX
-    #     figure out why scrape(1) doesn't workX
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 124, in run_guiX
-    l7 = tk.Label(textvariable=sp_defense)X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 148, in <module>X
+    main()X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 141, in mainX
+    run_gui()  # gui is initially empty, prompts user to enter a pokemon IDX
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 130, in run_guiX
+    window.mainloop()  #TODO PROBLEM: this is blockingX
   File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloopX
     self.tk.mainloop(n)X
 KeyboardInterruptX
-PS 
+XPS 
