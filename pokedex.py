@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 import chromedriver_autoinstaller
 
 from functools import partial
+from PIL import ImageTk, Image
 
 # TODO make a version of this that uses the API instead of web scraping
 
@@ -20,7 +21,7 @@ poke_data["defense"] = None
 poke_data["special attack"] = None
 poke_data["special defense"] = None
 poke_data["speed"] = None
-
+poke_data["image_url"] = None
 
 def scrape(poke_id):
     poke_data = {} #name, types, hp, attack, defense, special attack, special defense, speed, image
@@ -65,8 +66,9 @@ def scrape(poke_id):
     poke_data["special attack"] = row_data[7].text
     poke_data["special defense"] = row_data[8].text
     poke_data["speed"] = row_data[9].text
-
-    print(poke_data)
+    poke_data["image_url"] = row_data[1].find_element(By.TAG_NAME, "img").get_attribute("src")
+    breakpoint()
+    # print(poke_data)
     driver.close()
     driver.quit()
     return poke_data
@@ -90,10 +92,10 @@ def update_gui_fields():
     sp_attack.set(f"Special Attack: {poke_data['special attack']}")
     sp_defense.set(f"Special Defense: {poke_data['special defense']}")
     speed.set(f"Speed: {poke_data['speed']}")
-
+    img = ImageTk.PhotoImage(Image.open(poke_data['image_url']))
 
 def run_gui():
-    global name, types, hp, attack, defense, sp_attack, sp_defense, speed
+    global name, types, hp, attack, defense, sp_attack, sp_defense, speed, img
     window = tk.Tk()
     window.geometry("400x400")
     entry_var = tk.StringVar()
@@ -112,6 +114,10 @@ def run_gui():
     sp_attack = tk.StringVar(value=f"Special Attack: {poke_data['special attack']}")
     sp_defense = tk.StringVar(value=f"Special Defense: {poke_data['special defense']}")
     speed = tk.StringVar(value=f"Speed: {poke_data['speed']}")
+    try:
+        img = ImageTk.PhotoImage(Image.open(poke_data['image_url']))
+    except:
+        img = None
 
     l1 = tk.Label(textvariable=name)
     l2 = tk.Label(textvariable=types)
@@ -121,7 +127,7 @@ def run_gui():
     l6 = tk.Label(textvariable=sp_attack)
     l7 = tk.Label(textvariable=sp_defense)
     l8 = tk.Label(textvariable=speed)
-
+    l9 = tk.Label(image = img)
 
     l1.pack(); l2.pack(); l3.pack(); l4.pack() 
     l5.pack(); l6.pack(); l7.pack(); l8.pack()

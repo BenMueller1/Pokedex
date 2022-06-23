@@ -1,41 +1,81 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
 X
-DevTools listening on ws://127.0.0.1:61977/devtools/browser/63b7251b-6030-44be-8a30-b2ed2470ec57X
-X{'name': 'Charmander', 'types': ['FIRE'], 'hp': '39', 'attack': '52', 'defense': '43', 'special attack': '60', 'special defense': '5
-0', 'speed': '65'}X
-X
-DevTools listening on ws://127.0.0.1:62006/devtools/browser/fbb87e18-b203-49ac-a075-f2959908d9d0X
-X{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
-fense': '100', 'speed': '80'}X
-X
-DevTools listening on ws://127.0.0.1:62050/devtools/browser/645b3244-97f5-493a-be4e-7714c198c4d0X
-X{'name': 'Ivysaur', 'types': ['GRASS', 'POISON'], 'hp': '60', 'attack': '62', 'defense': '63', 'special attack': '80', 'special defe
-nse': '80', 'speed': '60'}X
-X
-DevTools listening on ws://127.0.0.1:62088/devtools/browser/2a9f68f2-4b0e-4606-9f01-39c9273aa32fX
+DevTools listening on ws://127.0.0.1:56180/devtools/browser/48e56eec-44c2-47ad-abcd-831d50436f67X
 XException in Tkinter callback
 XTraceback (most recent call last):
   File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__X
     return self.func(*args)X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 79, in get_pokemonX
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 81, in get_pokemonX
     poke_data = scrape(int(poke_id))X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 60, in scrapeX
-    poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").textX
-IndexError: list index out of rangeX
-X[24616:37956:0623/001251.100:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101
-X[35860:16864:0623/001252.359:ERROR:device_event_log_impl.cc(214)] [00:12:52.359] USB: usb_device_handle_win.cc:1048 Failed to read d
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 69, in scrapeX
+    poke_data["image_url"] = row_data[1].find_element(By.TAG_NAME, "img").get_attribute("src")X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py", line 735,
+ in find_elementX
+    return self._execute(Command.FIND_CHILD_ELEMENT,X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py", line 710,
+ in _executeX
+    return self._parent.execute(command, params)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 424, 
+in executeX
+    self.error_handler.check_response(response)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 24
+7, in check_responseX
+    raise exception_class(message, screen, stacktrace)X
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","sel
+ector":"img"}X
+  (Session info: chrome=102.0.5005.115)X
+Stacktrace:X
+Backtrace:X
+        Ordinal0 [0x00B82733+2434867]X
+        Ordinal0 [0x00B107A1+1968033]X
+        Ordinal0 [0x009FC678+837240]X
+        Ordinal0 [0x00A294E0+1021152]X
+        Ordinal0 [0x00A2977B+1021819]X
+        Ordinal0 [0x00A1FCD1+982225]X
+        Ordinal0 [0x00A44484+1131652]X
+        Ordinal0 [0x00A1FC54+982100]X
+        Ordinal0 [0x00A44654+1132116]X
+        Ordinal0 [0x00A54892+1198226]X
+        Ordinal0 [0x00A44256+1131094]X
+        Ordinal0 [0x00A1E840+976960]X
+        Ordinal0 [0x00A1F736+980790]X
+        GetHandleVerifier [0x00DF3C72+2515426]X
+        GetHandleVerifier [0x00DE702F+2463135]X
+        GetHandleVerifier [0x00C2522A+620442]X
+        GetHandleVerifier [0x00C24016+615814]X
+        Ordinal0 [0x00B1707B+1994875]X
+        Ordinal0 [0x00B1B938+2013496]X
+        Ordinal0 [0x00B1BA25+2013733]X
+        Ordinal0 [0x00B24DE1+2051553]X
+        BaseThreadInitThunk [0x74ED6359+25]X
+        RtlGetAppContainerNamedObjectPath [0x770287A4+228]X
+        RtlGetAppContainerNamedObjectPath [0x77028774+180]X
+X
+X[22056:40628:0623/002047.588:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101
+X[22056:40628:0623/002047.655:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101
+X[37652:39004:0623/002048.863:ERROR:device_event_log_impl.cc(214)] [00:20:48.863] USB: usb_device_handle_win.cc:1048 Failed to read d
 escriptor from node connection: A device attached to the system is not functioning. (0x1F)X
-XException in Tkinter callbackX
+XTraceback (most recent call last):
+X  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 152, in <module>
+    main()X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 145, in mainX
+    run_gui()  # gui is initially empty, prompts user to enter a pokemon IDX
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 134, in run_guiX
+    window.mainloop()  #TODO PROBLEM: this is blockingX
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloopX
+    self.tk.mainloop(n)X
+KeyboardInterruptX
+X[37652:39004:0623/002048.863:ERROR:device_event_log_impl.cc(214)] [00:20:48.863] USB: usb_device_handle_win.cc:1048 Failed to read d
+escriptor from node connection: A device attached to the system is not functioning. (0x1F)X
 Traceback (most recent call last):X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__X
-    return self.func(*args)X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 79, in get_pokemonX
-    poke_data = scrape(int(poke_id))X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 60, in scrapeX
-    poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").textX
-IndexError: list index out of rangeX
-[24616:37956:0623/001251.100:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101  
-[35860:16864:0623/001252.359:ERROR:device_event_log_impl.cc(214)] [00:12:52.359] USB: usb_device_handle_win.cc:1048 Failed to read d
-escriptor from node connection: A device attached to the system is not functioning. (0x1F)X
-XPS 
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 152, in <module>X
+    main()X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 145, in mainX
+    run_gui()  # gui is initially empty, prompts user to enter a pokemon IDX
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 134, in run_guiX
+    window.mainloop()  #TODO PROBLEM: this is blockingX
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloopX
+    self.tk.mainloop(n)X
+KeyboardInterruptX
+PS 
