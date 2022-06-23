@@ -67,7 +67,7 @@ def scrape(poke_id):
     poke_data["special defense"] = row_data[8].text
     poke_data["speed"] = row_data[9].text
     poke_data["image_url"] = row_data[0].find_element(By.TAG_NAME, "img").get_attribute("src")
-    breakpoint()
+    # breakpoint()
     # print(poke_data)
     driver.close()
     driver.quit()
@@ -92,6 +92,7 @@ def update_gui_fields():
     sp_attack.set(f"Special Attack: {poke_data['special attack']}")
     sp_defense.set(f"Special Defense: {poke_data['special defense']}")
     speed.set(f"Speed: {poke_data['speed']}")
+    breakpoint()
     img = ImageTk.PhotoImage(Image.open(poke_data['image_url']))
 
 def run_gui():

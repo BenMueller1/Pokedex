@@ -1,3 +1,38 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
+X
+DevTools listening on ws://127.0.0.1:51053/devtools/browser/d8b2a2b7-95ce-4e00-98aa-a4489d8d3483X
+XException in Tkinter callback
+XTraceback (most recent call last):
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__X
+    return self.func(*args)X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 83, in get_pokemonX
+    update_gui_fields()X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 95, in update_gui_fieldsX
+    img = ImageTk.PhotoImage(Image.open(poke_data['image_url']))X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\PIL\Image.py", line 3068, in openX
+    fp = builtins.open(filename, "rb")X
+OSError: [Errno 22] Invalid argument: 'https://img.pokemondb.net/sprites/sword-shield/icon/venusaur.png'X
+XTraceback (most recent call last):
+X  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 152, in <module>
+    if __name__ == "__main__":X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 145, in mainX
+X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 134, in run_guiX
+    l5.pack(); l6.pack(); l7.pack(); l8.pack()X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloopX
+X    self.tk.mainloop(n)
+KeyboardInterruptX
+X    fp = builtins.open(filename, "rb")X
+OSError: [Errno 22] Invalid argument: 'https://img.pokemondb.net/sprites/sword-shield/icon/venusaur.png'X
+Traceback (most recent call last):X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 152, in <module>X
+    if __name__ == "__main__":X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 145, in mainX
+X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 134, in run_guiX
+    l5.pack(); l6.pack(); l7.pack(); l8.pack()X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1458, in mainloopX
+    self.tk.mainloop(n)X
+KeyboardInterruptX
 PS 
