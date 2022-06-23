@@ -25,10 +25,22 @@ def scrape(poke_id):
     ).click()
 
     # use css selectors to find the nth child from the top of the html element that holds all of the rows
-    row = driver.find_element(  # this works
-        By.CSS_SELECTOR,
-        f"tr:nth-child({poke_id})"
-    )
+    # need to find first element with data-sort-value equal to poke_id
+    row_id = 0
+    i = poke_id-1
+    while (row_id != poke_id):
+        i += 1
+        row = driver.find_element( 
+            By.CSS_SELECTOR,
+            f"tr:nth-child({i})"
+        )
+        row_id = row.find_element(
+            By.CSS_SELECTOR,
+            "span:nth-child(2)"
+        ).text
+        row_id = int(row_id)
+        breakpoint()
+
     #breakpoint()
     row_data = row.find_elements(By.TAG_NAME, "td") 
     #breakpoint()
@@ -71,11 +83,7 @@ def run_gui():
 
 def main():
     # scrape(1) does not work
-    scrape(2)
-    scrape(3)
     scrape(4)
-    scrape(5)
-    scrape(6)
     return
 
     run_gui()  # gui is initially empty, prompts user to enter a pokemon ID

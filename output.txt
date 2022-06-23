@@ -1,59 +1,40 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
 X
-DevTools listening on ws://127.0.0.1:55797/devtools/browser/d845ea37-4bae-40cc-82bf-ac4445589381X
-X{'name': 'Ivysaur', 'types': ['GRASS', 'POISON'], 'hp': '60', 'attack': '62', 'defense': '63', 'special attack': '80', 'special defe
-nse': '80', 'speed': '60'}X
+DevTools listening on ws://127.0.0.1:56123/devtools/browser/85c250a9-4441-45f0-be05-b7ad5018fec5X
+X> c:\users\benjm\git\codehistoriespythonprojects\pokedex\pokedex.py(31)scrape()
+-> while (row_id != poke_id):X
+X(Pdb) row_i[41556:35788:0622/224736.455:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_e
+rror -101X
+Xd[41556:35788:0622/224736.518:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101
 X
-DevTools listening on ws://127.0.0.1:55821/devtools/browser/11ff5f92-869f-45c8-a794-fadedf7297d1X
-X{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
-fense': '100', 'speed': '80'}X
-X
-DevTools listening on ws://127.0.0.1:55846/devtools/browser/856f00e5-ca3f-4a16-82e1-a8045372a49fX
-X{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '100', 'defense': '123', 'special attack': '122', 'special 
-defense': '120', 'speed': '80'}X
-XTraceback (most recent call last):
-X  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connection
-X    sock.connect(sa)
-TimeoutError: timed outX
-X
-During handling of the above exception, another exception occurred:X
-X
-Traceback (most recent call last):X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 90, in <module>X
-    main()X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 76, in mainX
-    scrape(4)X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 47, in scrapeX
-    driver.quit()X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 231
-, in quitX
-X    self.service.stop()
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 147, in
- stopX
-X    self.send_remote_shutdown_command()
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 128, in
- send_remote_shutdown_commandX
-    if not self.is_connectable():X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 116, in
- is_connectableX
-    return utils.is_connectable(self.port)X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\utils.py", line 107, in i
-s_connectableX
-X    socket_ = socket.create_connection((host, port), 1)
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connectionX
-    sock.connect(sa)X
-KeyboardInterruptX
-X  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 128, in
- send_remote_shutdown_commandX
-    if not self.is_connectable():X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\service.py", line 116, in
- is_connectableX
-    return utils.is_connectable(self.port)X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\common\utils.py", line 107, in i
-s_connectableX
-    socket_ = socket.create_connection((host, port), 1)X
-  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\socket.py", line 833, in create_connectionX
-    sock.connect(sa)X
-KeyboardInterruptX
+X3
+(Pdb)X[39752:36556:0622/224737.115:ERROR:device_event_log_impl.cc(214)] [22:47:37.116] USB: usb_device_handle_win.cc:1048 Failed to 
+read descriptor from node connection: A device attached to the system is not functioning. (0x1F)X
+Xrow_id
+X3
+(Pdb)Xpoke) _id
+X4
+(Pdb)Xcontinue
+X> c:\users\benjm\git\codehistoriespythonprojects\pokedex\pokedex.py(31)scrape()
+-> while (row_id != poke_id):X
+(Pdb)Xrow_id
+X4
+(Pdb)Xpoke_id
+X4
+(Pdb)Xconit  tinue
+X{'name': 'Charmander', 'types': ['FIRE'], 'hp': '39', 'attack': '52', 'defense': '43', 'special attack': '60', 'special defense': '5
+0', 'speed': '65'}X
+X(Pdb) poke_idX
+4X
+(Pdb) continueX
+> c:\users\benjm\git\codehistoriespythonprojects\pokedex\pokedex.py(31)scrape()X
+-> while (row_id != poke_id):X
+(Pdb) row_idX
+4X
+(Pdb) poke_idX
+4X
+(Pdb) continueX
+{'name': 'Charmander', 'types': ['FIRE'], 'hp': '39', 'attack': '52', 'defense': '43', 'special attack': '60', 'special defense': '5
+0', 'speed': '65'}X
 PS 
