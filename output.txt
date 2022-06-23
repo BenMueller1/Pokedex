@@ -1,7 +1,21 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
 X
-DevTools listening on ws://127.0.0.1:51576/devtools/browser/09e5d302-852f-45d1-a09d-c3d9a23e1ebaX
-{'name': 'Venusaur', 'types': ['GRASS', 'POISON'], 'hp': '80', 'attack': '82', 'defense': '83', 'special attack': '100', 'special de
-fense': '100', 'speed': '80'}X
+DevTools listening on ws://127.0.0.1:51637/devtools/browser/3f8a5060-bb2c-459f-b851-63b8a19df1cdX
+XTraceback (most recent call last):
+X  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 81, in <module>
+    main()X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 69, in mainX
+    scrape(1)X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 33, in scrapeX
+    poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").textX
+IndexError: list index out of rangeX
+XTraceback (most recent call last):X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 81, in <module>X
+    main()X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 69, in mainX
+    scrape(1)X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 33, in scrapeX
+    poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").textX
+IndexError: list index out of rangeX
 PS 
