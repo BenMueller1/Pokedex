@@ -7,6 +7,8 @@ import selenium
 
 def init_gui():
     window = tk.Tk()
+    greeting = tk.Label(text="Hello, Tkinter")
+    greeting.pack()
 
 
 def main():
