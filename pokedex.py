@@ -23,7 +23,7 @@ poke_data["defense"] = None
 poke_data["special attack"] = None
 poke_data["special defense"] = None
 poke_data["speed"] = None
-poke_data["image_url"] = None
+# poke_data["image_url"] = None
 
 def scrape(poke_id):
     poke_data = {} #name, types, hp, attack, defense, special attack, special defense, speed, image
@@ -68,7 +68,7 @@ def scrape(poke_id):
     poke_data["special attack"] = row_data[7].text
     poke_data["special defense"] = row_data[8].text
     poke_data["speed"] = row_data[9].text
-    poke_data["image_url"] = row_data[0].find_element(By.TAG_NAME, "img").get_attribute("src")
+    # poke_data["image_url"] = row_data[0].find_element(By.TAG_NAME, "img").get_attribute("src")
     # breakpoint()
     # print(poke_data)
     driver.close()
@@ -94,9 +94,9 @@ def update_gui_fields():
     sp_attack.set(f"Special Attack: {poke_data['special attack']}")
     sp_defense.set(f"Special Defense: {poke_data['special defense']}")
     speed.set(f"Speed: {poke_data['speed']}")
-    breakpoint()
-    urllib.request.urlretrieve(poke_data['image_url'], "img.png")
-    img = ImageTk.PhotoImage(Image.open("img.png"))
+    # breakpoint()
+    # urllib.request.urlretrieve(poke_data['image_url'], "img.png")
+    # img = ImageTk.PhotoImage(Image.open("img.png"))
 
 def run_gui():
     global name, types, hp, attack, defense, sp_attack, sp_defense, speed, img
@@ -118,10 +118,10 @@ def run_gui():
     sp_attack = tk.StringVar(value=f"Special Attack: {poke_data['special attack']}")
     sp_defense = tk.StringVar(value=f"Special Defense: {poke_data['special defense']}")
     speed = tk.StringVar(value=f"Speed: {poke_data['speed']}")
-    try:
-        img = ImageTk.PhotoImage(Image.open(poke_data['image_url']))
-    except:
-        img = None
+    # try:
+    #     img = ImageTk.PhotoImage(Image.open(poke_data['image_url']))
+    # except:
+    #     img = None
 
     l1 = tk.Label(textvariable=name)
     l2 = tk.Label(textvariable=types)
