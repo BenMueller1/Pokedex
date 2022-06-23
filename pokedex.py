@@ -131,7 +131,7 @@ def run_gui():
     l6 = tk.Label(textvariable=sp_attack)
     l7 = tk.Label(textvariable=sp_defense)
     l8 = tk.Label(textvariable=speed)
-    l9 = tk.Label(image = img)
+    #l9 = tk.Label(image = img)
 
     l1.pack(); l2.pack(); l3.pack(); l4.pack() 
     l5.pack(); l6.pack(); l7.pack(); l8.pack()

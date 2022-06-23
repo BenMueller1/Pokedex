@@ -1,11 +1,37 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
-Traceback (most recent call last):X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 156, in <module>X
-    main()X
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 149, in mainX
-    run_gui()  # gui is initially empty, prompts user to enter a pokemon IDX
-  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 134, in run_guiX
-    l9 = tk.Label(image = img)X
-NameError: name 'img' is not definedX
+X
+DevTools listening on ws://127.0.0.1:64463/devtools/browser/4f3a8794-9259-4f3b-be21-b612b9b8c083X
+X
+DevTools listening on ws://127.0.0.1:64517/devtools/browser/92f1dba8-4137-4214-b8c6-e7cb634b0d5fX
+X[40152:41376:0623/003409.423:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101
+X[40152:41376:0623/003409.648:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101
+X[40152:41376:0623/003409.856:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -201
+X
+DevTools listening on ws://127.0.0.1:58861/devtools/browser/d8a5b4a8-f429-4d4c-9d2f-bc200f02ed1bX
+XException in Tkinter callback
+XTraceback (most recent call last):
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__X
+    return self.func(*args)X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 83, in get_pokemonX
+    poke_data = scrape(int(poke_id))X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 63, in scrapeX
+    poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").textX
+IndexError: list index out of rangeX
+X[25240:41184:0623/003428.702:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101
+X[25240:41184:0623/003428.797:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -201
+X[6784:28276:0623/003429.863:ERROR:device_event_log_impl.cc(214)] [00:34:29.863] USB: usb_device_handle_win.cc:1048 Failed to read de
+scriptor from node connection: A device attached to the system is not functioning. (0x1F)X
+XTraceback (most recent call last):X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\tkinter\__init__.py", line 1921, in __call__X
+    return self.func(*args)X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 83, in get_pokemonX
+    poke_data = scrape(int(poke_id))X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 63, in scrapeX
+    poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").textX
+IndexError: list index out of rangeX
+[25240:41184:0623/003428.702:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -101  
+[25240:41184:0623/003428.797:ERROR:ssl_client_socket_impl.cc(999)] handshake failed; returned -1, SSL error code 1, net_error -201  
+[6784:28276:0623/003429.863:ERROR:device_event_log_impl.cc(214)] [00:34:29.863] USB: usb_device_handle_win.cc:1048 Failed to read de
+scriptor from node connection: A device attached to the system is not functioning. (0x1F)X
 PS 
