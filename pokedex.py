@@ -56,9 +56,7 @@ def scrape(poke_id):
             ).text
             row_id = int(row_id)
 
-    breakpoint()
     row_data = row.find_elements(By.TAG_NAME, "td") 
-    breakpoint()
     poke_data["name"] = row_data[1].find_element(By.TAG_NAME, "a").text
     poke_data["types"] = [typ.text for typ in list(row_data[2].find_elements(By.TAG_NAME, "a"))]
     poke_data["hp"] = row_data[4].text
