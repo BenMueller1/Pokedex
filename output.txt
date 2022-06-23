@@ -1,7 +1,66 @@
 C:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex> & C:/Users/benjm/AppData/Local/Programs/Python/Python310/python.exe c:/Us
 ers/benjm/git/codeHistoriesPythonProjects/Pokedex/pokedex.pyX
 X
-DevTools listening on ws://127.0.0.1:51423/devtools/browser/b571acd2-dfa4-48d7-a767-ed30b73b3522X
-{'name': 'Squirtle', 'types': ['WATER'], 'hp': '44', 'attack': '48', 'defense': '65', 'special attack': '50', 'special defense': '64
-', 'speed': '43'}X
+DevTools listening on ws://127.0.0.1:49396/devtools/browser/a9556927-240c-4ff5-92a5-74a2c38175b0X
+XTraceback (most recent call last):
+X  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 97, in <module>
+    main()X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 85, in mainX
+    scrape(1)X
+  File "c:\Users\benjm\git\codeHistoriesPythonProjects\Pokedex\pokedex.py", line 37, in scrapeX
+    row_id = row.find_element(X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py", line 735,
+ in find_elementX
+X    return self._execute(Command.FIND_CHILD_ELEMENT,
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py", line 710,
+ in _executeX
+    return self._parent.execute(command, params)X
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 424, 
+in executeX
+X    self.error_handler.check_response(response)
+  File "C:\Users\benjm\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 24
+7, in check_responseX
+X    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","sel
+ector":"span:nth-child(2)"}X
+  (Session info: chrome=102.0.5005.115)X
+Stacktrace:X
+Backtrace:X
+        Ordinal0 [0x00B82733+2434867]X
+        Ordinal0 [0x00B107A1+1968033]X
+        Ordinal0 [0x009FC678+837240]X
+        Ordinal0 [0x00A294E0+1021152]X
+        Ordinal0 [0x00A2977B+1021819]X
+        Ordinal0 [0x00A1FCD1+982225]X
+        Ordinal0 [0x00A44484+1131652]X
+        Ordinal0 [0x00A1FC54+982100]X
+        Ordinal0 [0x00A44654+1132116]X
+        Ordinal0 [0x00A54892+1198226]X
+        Ordinal0 [0x00A44256+1131094]X
+        Ordinal0 [0x00A1E840+976960]X
+        Ordinal0 [0x00A1F736+980790]X
+        GetHandleVerifier [0x00DF3C72+2515426]X
+        GetHandleVerifier [0x00DE702F+2463135]X
+        GetHandleVerifier [0x00C2522A+620442]X
+        GetHandleVerifier [0x00C24016+615814]X
+        Ordinal0 [0x00B1707B+1994875]X
+        Ordinal0 [0x00B1B938+2013496]X
+        Ordinal0 [0x00B1BA25+2013733]X
+        Ordinal0 [0x00B24DE1+2051553]X
+        BaseThreadInitThunk [0x74ED6359+25]X
+        RtlGetAppContainerNamedObjectPath [0x770287A4+228]X
+        RtlGetAppContainerNamedObjectPath [0x77028774+180]X
+X
+X        GetHandleVerifier [0x00DF3C72+2515426]X
+        GetHandleVerifier [0x00DE702F+2463135]X
+        GetHandleVerifier [0x00C2522A+620442]X
+        GetHandleVerifier [0x00C24016+615814]X
+        Ordinal0 [0x00B1707B+1994875]X
+        Ordinal0 [0x00B1B938+2013496]X
+        Ordinal0 [0x00B1BA25+2013733]X
+        Ordinal0 [0x00B24DE1+2051553]X
+        BaseThreadInitThunk [0x74ED6359+25]X
+        RtlGetAppContainerNamedObjectPath [0x770287A4+228]X
+        RtlGetAppContainerNamedObjectPath [0x77028774+180]X
+X
 PS 
